@@ -1,25 +1,26 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import SideBar from './Components/SideBar';
+import DashboardOverview from './Components/DashboardOverview';
+import Schedule from './Components/Schedule';
+import StudentList from './Components/StudentList';
+import Message from './Components/Message';
+import Payment from './Components/Payment';
+import { Routes,Route } from 'react-router-dom';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+       <SideBar/>
+       <Routes>
+          <Route path='/' element={<DashboardOverview/>}></Route>
+          <Route path='/schedule' element={<Schedule/>}></Route>
+          <Route path='/studentlist' element={<StudentList/>}></Route>
+          <Route path='/message' element={<Message/>}></Route>
+          <Route path='/payment' element={<Payment/>}></Route>
+       </Routes>
+    </>
+  )
 }
 
-export default App;
+export default App
