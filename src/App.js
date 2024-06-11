@@ -6,39 +6,25 @@ import Schedule from './Components/Schedule';
 import StudentList from './Components/StudentList';
 import Message from './Components/Message';
 import Payment from './Components/Payment';
-import { BrowserRouter,Routes,Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 const App = () => {
-  return ( 
-    <>
-        <BrowserRouter>
-        <div className='flex'>
-            <div>
-              <SideBar/>
-            </div>
-            <div className={`absolute sm:left-[13%] md:left-[10%] left-[21%]`}>
-              <Routes>
-                    <Route path='/' element={<DashboardOverview/>}></Route> 
-                    <Route path='/schedule' element={<Schedule/>}></Route> 
-                    <Route path='/studentlist' element={<StudentList/>}></Route> 
-                    <Route path='/message' element={<Message/>}></Route> 
-                    <Route path='/payment' element={<Payment/>}></Route> 
-              </Routes>
-            </div>
+  return (
+    <BrowserRouter>
+      <div className="flex">
+        <SideBar />
+        <div className="flex-1 ml-[20%] sm:ml-[13%] md:ml-[10%]">
+          <Routes>
+            <Route path="/" element={<DashboardOverview />} />
+            <Route path="/schedule" element={<Schedule />} />
+            <Route path="/studentlist" element={<StudentList />} />
+            <Route path="/message" element={<Message />} />
+            <Route path="/payment" element={<Payment />} />
+          </Routes>
         </div>
-            </BrowserRouter>
+      </div>
+    </BrowserRouter>
+  );
+};
 
-
-       {/* <SideBar/>
-       <Routes>
-          <Route path='/' element={<DashboardOverview/>}></Route>
-          <Route path='/schedule' element={<Schedule/>}></Route>
-          <Route path='/studentlist' element={<StudentList/>}></Route>
-          <Route path='/message' element={<Message/>}></Route>
-          <Route path='/payment' element={<Payment/>}></Route>
-       </Routes> */}
-    </>
-  )
-}
-
-export default App
+export default App;

@@ -6,7 +6,7 @@ const DashboardOverview = () => {
 
   return (
     <div>   
-       <div className={`py-4 sm:px-5 px-3 sm:text-2xl font-semibold flex-1 h-screen w-[100%]`}>
+       <div className={`py-4 sm:px-5 px-3 sm:text-2xl font-semibold flex-1 h-screen max-w-[100%]`}>
             <h1 className='shadow py-3 pl-5 lg:rounded-full rounded text-[18px] sm:text-2xl'>Dashboard Overview</h1>
 
             <div className='grid lg:grid-cols-2 grid-cols-1 my-7 gap-4'>
@@ -15,7 +15,7 @@ const DashboardOverview = () => {
                     <h1 className='sm:pl-7 pl-5 py-5 '>Classes Today</h1>
                     <div>
 
-                        <div className='sm:w-[90%] mx-auto my-4 flex justify-between px-5 rounded shadow py-2 items-center bg-[#FEF7FF]'>
+                        <div className='sm:max-w-[90%] mx-auto my-4 flex justify-between px-5 rounded shadow py-2 items-center bg-[#FEF7FF]'>
                             <div>
                                 <h2>Contemporary</h2>
                                 <h3 className='sm:text-[15px] text-[13px] text-[#A686AD] sm:my-0 my-2'>21 Students</h3>
@@ -23,7 +23,7 @@ const DashboardOverview = () => {
                             <p className='sm:text-[15px] text-[13px] text-[#A686AD] ml-5'>10 AM - 11.30 AM</p>
                         </div>
 
-                        <div className='sm:w-[90%] mx-auto my-4 flex justify-between px-5 rounded shadow py-2 items-center bg-[#FEF7FF]'>
+                        <div className='sm:max-w-[90%] mx-auto my-4 flex justify-between px-5 rounded shadow py-2 items-center bg-[#FEF7FF]'>
                             <div>
                                 <h2 className=''>Ballet</h2>
                                 <h3 className='sm:text-[15px] text-[13px] text-[#A686AD] sm:my-0 my-2'>12 Students</h3>
@@ -32,7 +32,7 @@ const DashboardOverview = () => {
                         </div>
 
 
-                        <div className='sm:w-[90%] mx-auto my-4 flex justify-between px-5 rounded shadow py-2 items-center bg-[#FEF7FF]'>
+                        <div className='sm:max-w-[90%] mx-auto my-4 flex justify-between px-5 rounded shadow py-2 items-center bg-[#FEF7FF]'>
                             <div>
                                 <h2>Hip-Hop</h2>
                                 <h3 className='sm:text-[15px] text-[13px] text-[#A686AD] sm:my-0 my-2'>37 Students</h3>
@@ -45,14 +45,14 @@ const DashboardOverview = () => {
                 
                 <div className='shadow-lg rounded'>
                     <h1 className='pl-7 py-5'>Student Status</h1>
-                    <img src="graph.png" className='sm:w-[90%] w-[80%] mx-auto mb-5' alt="GraphImg" />
+                    <img src="graph.png" className='sm:max-w-[90%] max-w-[80%] mx-auto mb-5' alt="GraphImg" />
                 </div>
 
             </div>
 
 
 
-            <div className='w-[100%] mx-auto grid sm:grid-cols-2 lg:grid-cols-3  grid-cols-1 justify-between gap-7'>
+            <div className='max-w-[100%] mx-auto grid sm:grid-cols-2 lg:grid-cols-3  grid-cols-1 justify-between gap-7'>
 
             <div className='shadow-lg px-5 mb-5'>
                 <h2 className='text-xl pt-4'>Revenue</h2>
