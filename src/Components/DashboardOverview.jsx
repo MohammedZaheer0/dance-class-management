@@ -9,9 +9,9 @@ const DashboardOverview = () => {
        <div className={`py-4 sm:px-5 px-3 sm:text-2xl font-semibold flex-1 h-screen w-[100%]`}>
             <h1 className='shadow py-3 pl-5 lg:rounded-full rounded text-[18px] sm:text-2xl'>Dashboard Overview</h1>
 
-            <div className='grid md:grid-cols-2 grid-cols-1 my-7 gap-4'>
+            <div className='grid lg:grid-cols-2 grid-cols-1 my-7 gap-4'>
                 
-                <div className='shadow-lg rounded'>
+                <div className='shadow-lg rounded sm:pb-3 pb-5'>
                     <h1 className='sm:pl-7 pl-5 py-5 '>Classes Today</h1>
                     <div>
 
@@ -52,7 +52,7 @@ const DashboardOverview = () => {
 
 
 
-            <div className='w-[100%] mx-auto grid md:grid-cols-3 grid-cols-1 justify-between gap-7'>
+            <div className='w-[100%] mx-auto grid sm:grid-cols-2 lg:grid-cols-3  grid-cols-1 justify-between gap-7'>
 
             <div className='shadow-lg px-5 mb-5'>
                 <h2 className='text-xl pt-4'>Revenue</h2>

@@ -16,7 +16,7 @@ const App = () => {
             <div>
               <SideBar/>
             </div>
-            <div className={`absolute sm:left-[16%] left-[21%]`}>
+            <div className={`absolute sm:left-[13%] md:left-[10%] left-[21%]`}>
               <Routes>
                     <Route path='/' element={<DashboardOverview/>}></Route> 
                     <Route path='/schedule' element={<Schedule/>}></Route> 
