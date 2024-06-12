@@ -81,7 +81,7 @@ const StudentList = () => {
 
   return (
     <div>   
-   <div className={`py-4 sm:px-5 px-2  flex-1 h-screen max-w-full`}>
+   <div className={`py-4 sm:px-5 px-4  flex-1 h-screen max-w-full`}>
 
         <h1 className='shadow py-3 pl-5 lg:rounded-full rounded text-[18px] sm:text-2xl max-w-[100%] font-semibold'>Student List</h1>
 
@@ -118,8 +118,8 @@ const StudentList = () => {
             <tbody className='block sm:table-row-group'>
               {StudentData.map((value,index) => {
                 return(
-                <tr className='shadow-lg my-5' key={index} >
-                <td className='py-3 sm:flex block items-center '><img src={value.img} className='sm:mr-2 h-7 sm:h-9' alt="studentimg" /> <span className='font-semibold my-3 text-[13px] md:text-[18px]'>{value.name}</span></td>
+                <tr className='shadow-lg my-5 block' key={index} >
+                <td className='py-3 flex items-center '><img src={value.img} className='mr-2 h-7 sm:h-9' alt="studentimg" /> <span className='font-semibold my-3 text-[13px] md:text-[18px]'>{value.name}</span></td>
                 <td className='text-[#A686AD] font-medium text-[13px] md:text-[18px]'>{value.danceForm}</td>
                 <td className='text-[#A686AD] font-medium text-[13px] md:text-[18px]'>{value.joiningDate}</td>
                 <td className={`${value.feeStatus ===  'Paid' ? 'text-[#04BC00]' : 'text-[#A686AD] '} font-medium text-[13px] md:text-[18px]`}>{value.feeStatus}</td>
