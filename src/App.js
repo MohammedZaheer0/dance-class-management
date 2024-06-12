@@ -13,7 +13,7 @@ const App = () => {
     <BrowserRouter>
       <div className="flex">
         <SideBar />
-        <div className="flex-1 ml-[20%] sm:ml-[13%] md:ml-[10%]">
+        <div className="flex-1 ml-[10%] sm:ml-[6%] md:ml-[5%]">
           <Routes>
             <Route path="/" element={<DashboardOverview />} />
             <Route path="/schedule" element={<Schedule />} />
