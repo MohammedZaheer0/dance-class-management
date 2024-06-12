@@ -1,5 +1,5 @@
 import React from 'react';
-import {Inject,ScheduleComponent,Day,Week,WorkWeek,Month,Agenda } from '@syncfusion/ej2-react-schedule';
+import { Inject, ScheduleComponent, Day, Week, WorkWeek, Month, Agenda, Resize, DragAndDrop } from '@syncfusion/ej2-react-schedule';
 import { registerLicense } from '@syncfusion/ej2-base';
 registerLicense('Ngo9BigBOggjHTQxAR8/V1NCaF5cXmZCeUx3R3xbf1x0ZFZMZFtbRXdPMyBoS35RckVlWH1edHRWQmheUUZy');
 
@@ -16,7 +16,7 @@ const Schedule = () => {
 
           <div id='calendar'>
                 <ScheduleComponent currentView='Week'>
-                <Inject services={[Day,Week,WorkWeek,Month,Agenda]} />
+                <Inject services={[Day,Week,WorkWeek,Month,Agenda,Resize,DragAndDrop]} />
                 </ScheduleComponent>
           </div>
 
@@ -26,4 +26,5 @@ const Schedule = () => {
   )
 }
 
-export default Schedule
+export default Schedule;
+

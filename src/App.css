@@ -19,3 +19,6 @@
 .marginbottom{
     margin-bottom: 20px !important;
 }
+#searchplaceholder::placeholder{
+    color: #A686AD;
+}
