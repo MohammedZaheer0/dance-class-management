@@ -48,7 +48,7 @@ const StudentList = () => {
     {
       id:6,
       img : 'austin-wade-X6Uj51n5CE8-unsplash 1.png',
-      name : 'Firstname',
+      name : 'Firstname LastName',
       danceForm : 'Ballet',
       joiningDate : '30th July, 2021',
       feeStatus : 'Paid'
@@ -64,7 +64,7 @@ const StudentList = () => {
     {
       id:8,
       img : 'austin-wade-ex6qfO4TPMY-unsplash 1.png',
-      name : 'Firstname',
+      name : 'Firstname LastName',
       danceForm : 'Contemporary',
       joiningDate : '30th July, 2021',
       feeStatus : 'Paid'
@@ -72,7 +72,7 @@ const StudentList = () => {
     {
       id:9,
       img : 'vince-fleming-j3lf-Jn6deo-unsplash 1.png',
-      name : 'Firstname',
+      name : 'Firstname LastName',
       danceForm : 'Ballet',
       joiningDate : '31th August, 2020',
       feeStatus : 'Paid'
@@ -106,7 +106,7 @@ const StudentList = () => {
 
         <div className='max-w-full mb-10 overflow-x-auto'>
 
-          <table className='w-full border-none '>
+          <table className='min-w-full border-none '>
             <thead className='hidden sm:table-header-group'>
               <tr className='shadow-lg text-[#A686AD]'>
                 <th className='py-1'>Student</th>
@@ -118,8 +118,8 @@ const StudentList = () => {
             <tbody className='block sm:table-row-group'>
               {StudentData.map((value,index) => {
                 return(
-                <tr className='shadow-lg my-5 block' key={index} >
-                <td className='py-3 flex items-center '><img src={value.img} className='mr-2 h-7 sm:h-9' alt="studentimg" /> <span className='font-semibold my-3 text-[13px] md:text-[18px]'>{value.name}</span></td>
+                <tr className='shadow-lg my-5 block sm:table-row' key={index} >
+                <td className='py-3 flex items-center'><img src={value.img} className='mr-2 h-7 sm:h-9' alt="studentimg" /> <span className='font-semibold my-3 text-[13px] md:text-[18px]'>{value.name}</span></td>
                 <td className='text-[#A686AD] font-medium text-[13px] md:text-[18px]'>{value.danceForm}</td>
                 <td className='text-[#A686AD] font-medium text-[13px] md:text-[18px]'>{value.joiningDate}</td>
                 <td className={`${value.feeStatus ===  'Paid' ? 'text-[#04BC00]' : 'text-[#A686AD] '} font-medium text-[13px] md:text-[18px]`}>{value.feeStatus}</td>
