@@ -76,7 +76,7 @@ const Message = () => {
 
             {MessageData.map((value,index) => {
               return(
-                <div className='flex items-center justify-around my-7 cursor-pointer' key={index}>
+                <div className={`flex items-center justify-around my-4 cursor-pointer ${index===2 ? 'bg-[#643D6C] text-[white]' : ''} py-2`} key={index}>
                   <img src={value.img} alt="img" className='h-9 xl:h-full md:h-10' />
                   <div className='md:ml-3 xl:ml-0'>
                     <h2 className='font-semibold text-[14px] xl:text-[17px]'>{value.name}</h2>
