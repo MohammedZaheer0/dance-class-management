@@ -50,7 +50,7 @@ const Message = () => {
 
 
   return (
-    <div>
+    <div className='overflow-x-hidden'>
       <div className={`py-4 sm:px-5 px-3  flex-1 h-fit md:h-screen max-w-full `}>
 
       <h1 className='shadow py-3 pl-5 lg:rounded-full rounded text-[18px] sm:text-2xl max-w-[100%] font-semibold'>Message</h1>
@@ -71,7 +71,7 @@ const Message = () => {
   
           </div>
 
-         <div className='max-w-[100%]  md:px-2 lg:sm:px-5 px-2 my-10'>
+         <div className='max-w-[97%]  md:px-2 lg:sm:px-5 px-2 my-10'>
          <div className=''>
 
             {MessageData.map((value,index) => {
