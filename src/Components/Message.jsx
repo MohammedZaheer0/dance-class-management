@@ -56,14 +56,14 @@ const Message = () => {
       <h1 className='shadow py-3 pl-5 lg:rounded-full rounded text-[18px] sm:text-2xl max-w-[100%] font-semibold'>Message</h1>
 
 
-        <div className='grid md:grid-cols-[45%_55%] lg:grid-cols-[35%_65%] xl:grid-cols-[30%_70%] grid-cols-1'>
+        <div className='grid md:grid-cols-[45%_55%]  lg:grid-cols-[35%_65%] xl:grid-cols-[30%_70%] grid-cols-1'>
 
-          <div className='shadow-lg h-full'>
-          <div className='max-w-[100%] shadow-lg'>
+          <div className='shadow-lg h-auto md:h-full'>
+          <div className='max-w-[97%] shadow-lg'>
           
-           <div className='md:max-w-[95%] max-w-[90%] lg:max-w-[90%] mx-auto py-4 relative'>
+           <div className='md:max-w-[95%] max-w-[95%] lg:max-w-[90%] mx-auto py-4 relative'>
            <div className='bg-[#F3F3F3] py-2 px-4 rounded-md flex justify-between items-center'>
-              <input type="text" placeholder='Search' id='searchplaceholder' className=' font-medium border-none outline-none bg-transparent mr-5' />
+              <input type="text" placeholder='Search' id='searchplaceholder' className=' font-medium border-none outline-none bg-transparent' />
               <i className="fa-solid fa-magnifying-glass text-[#A686AD] absolute right-2"></i>
             </div>
            </div>
@@ -71,7 +71,7 @@ const Message = () => {
   
           </div>
 
-         <div className='max-w-[100%] h-auto md:h-full md:px-2 lg:sm:px-5 px-2 my-10'>
+         <div className='max-w-[100%]  md:px-2 lg:sm:px-5 px-2 my-10'>
          <div className=''>
 
             {MessageData.map((value,index) => {
