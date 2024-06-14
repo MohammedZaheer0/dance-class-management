@@ -2,16 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+/* All */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
+/* Active */
 .active{
     color: #CE00FF;
     background: #FEF7FF;
 }  
+/* Table */
   th, td {
     text-align: left;
     padding: 8px;
@@ -19,6 +22,7 @@
 .marginbottom{
     margin-bottom: 20px !important;
 }
+/* Input */
 #searchplaceholder::placeholder{
     color: #A686AD;
 }

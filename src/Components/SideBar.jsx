@@ -7,11 +7,11 @@ const SideBar = () => {
 
   return (
     <>
-    {/* #FEF7FF */}
         <div className='h-screen fixed bg-[white] z-50'>
 
         <div className={`${open ? 'w-64' : 'w-12'}   duration-300 relative flex items-center`}>
 
+            {/* SideBar Logo Div */}
             <div className={`${open ? 'pl-7 top-5 absolute' : 'hidden'}`}>
 
             <h2 className='text-4xl font-bold text-[#CE00FF]'>icon</h2>
@@ -22,6 +22,7 @@ const SideBar = () => {
         </div>
 
 
+      {/* Side Bar Icons Div */}
        <div className={`pt-[100px] ${open ? 'w-64' : 'w-12'}`}>
 
 

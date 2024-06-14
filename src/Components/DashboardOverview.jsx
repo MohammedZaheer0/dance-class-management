@@ -1,16 +1,18 @@
 import React from 'react'
 
 const DashboardOverview = () => {
+    // DanceNames Array
   const Dances = ['Hip-Hop','Contemporary','Bharatanatyam','Ballet','Lorem','Epsum','Dolor','Lorem'];
 
 
   return (
     <div>   
        <div className={`py-4 sm:px-5 px-3 sm:text-2xl font-semibold flex-1 h-screen max-w-[100%]`}>
-            <h1 className='shadow py-3 pl-5 lg:rounded-full rounded text-[18px] sm:text-2xl'>Dashboard Overview</h1>
-
+       {/* DashBoard Overview Header */}
+            <h1 className='shadow py-3 pl-5 lg:rounded-full rounded text-[18px] sm:text-2xl'>Dashboard Overview</h1> 
             <div className='grid lg:grid-cols-2 grid-cols-1 my-7 gap-4'>
                 
+                {/* Class Today Div */}
                 <div className='shadow-lg rounded sm:pb-3 pb-5'>
                     <h1 className='sm:pl-7 pl-5 py-5 '>Classes Today</h1>
                     <div>
@@ -43,6 +45,7 @@ const DashboardOverview = () => {
                 </div>
 
                 
+                {/* Student Status Div */}
                 <div className='shadow-lg rounded'>
                     <h1 className='pl-7 py-5'>Student Status</h1>
                     <img src="graph.png" className='sm:max-w-[90%] max-w-[80%] mx-auto mb-5' alt="GraphImg" />
@@ -54,6 +57,7 @@ const DashboardOverview = () => {
 
             <div className='max-w-[100%] mx-auto grid sm:grid-cols-2 lg:grid-cols-3  grid-cols-1 justify-between gap-7'>
 
+            {/* Revenue Div     */}
             <div className='shadow-lg px-5 mb-5'>
                 <h2 className='text-xl pt-4'>Revenue</h2>
 
@@ -82,6 +86,7 @@ const DashboardOverview = () => {
             </div>
 
 
+            {/* Top Dance Div                 */}
             <div className='shadow-lg px-5 mb-5'>
                 <h3 className='text-xl pt-4'>Top Dance forms</h3>
                 <div className='px-5'>
@@ -94,6 +99,7 @@ const DashboardOverview = () => {
             </div>
 
 
+            {/* Classes Hours Div */}
             <div className='shadow-lg px-5 h-fit pb-5 mb-5'>
                 <h2 className='text-xl pt-4'>Class Hours</h2>
                 <p className='my-3 text-[#A686AD] sm:text-xl text-[12px]'><span className='sm:text-5xl text-3xl text-black'>31</span>hr <span className='text-black sm:text-5xl text-3xl ml-5'> 45</span>min</p>

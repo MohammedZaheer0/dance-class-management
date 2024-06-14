@@ -1,9 +1,11 @@
 import React from 'react'
 
 const StudentList = () => {
-
+  // Dance Names
   const Dances = ['Dance From','Hip-Hop','Contemporary','Bharatanatyam','Ballet','Lorem','Epsum','Dolor','Lorem'];
 
+
+  // Student Data
   const StudentData = [
     {
       id:1,
@@ -85,6 +87,8 @@ const StudentList = () => {
 
         <h1 className='shadow py-3 pl-5 lg:rounded-full rounded text-[18px] sm:text-2xl max-w-[100%] font-semibold'>Student List</h1>
 
+
+        {/* Dance Names List */}
       <div className='max-w-[100%] grid sm:grid-cols-2 grid-cols-1 justify-between  my-5 items-center p-4 shadow-md mb-5'>
 
         <div className='max-w-[100%]'>
@@ -104,6 +108,8 @@ const StudentList = () => {
         </div>
       </div>
 
+
+        {/* Student Data Table     */}
         <div className='max-w-full mb-10 overflow-x-auto'>
 
           <table className='min-w-full border-none '>

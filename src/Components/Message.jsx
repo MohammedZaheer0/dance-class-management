@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Message = () => {
-
+    // Message Data
     const MessageData = [
       {
         id:1,
@@ -53,6 +53,7 @@ const Message = () => {
     <div className='overflow-x-hidden'>
       <div className={`py-4 sm:px-5 px-3  flex-1 h-fit md:h-screen max-w-full `}>
 
+      {/* Message Header */}
       <h1 className='shadow py-3 pl-5 lg:rounded-full rounded text-[18px] sm:text-2xl max-w-[100%] font-semibold'>Message</h1>
 
 
@@ -71,6 +72,7 @@ const Message = () => {
   
           </div>
 
+          {/* Chats List */}
          <div className='max-w-[97%]  md:px-2 lg:sm:px-5 px-2 my-10'>
          <div className=''>
 
@@ -97,7 +99,7 @@ const Message = () => {
 
 
 
-
+        {/* Chatting page     */}
           <div className='hidden md:block'>
           <div className='max-w-[100%] shadow-lg  py-1'>
               <div className='flex items-center justify-between px-10'>
