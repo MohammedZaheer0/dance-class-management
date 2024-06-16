@@ -84,7 +84,7 @@ const Message = () => {
                     <h2 className='font-semibold text-[14px] xl:text-[17px]'>{value.name}</h2>
                     <p className='text-[10px] sm:text-[12px] font-semibold text-[#A686AD]'>{value.title}</p>
                   </div>
-                <p className={`${value.msg!=='' ? 'bg-[#643D6C]' : ''} rounded-full xl:h-7 h-5 lg:w-7 w-5 text-[white] text-center text-[12px] lg:text-[14px]`}>{value.msg}</p>
+                <p className={`${value.msg!=='' ? 'bg-[#643D6C]' : ''} rounded-full xl:h-7 h-5 lg:w-7 w-5 xl:pt-1 text-[white] text-center text-[13px] lg:text-[14px]`}>{value.msg}</p>
                 </div>
               )
             })}
