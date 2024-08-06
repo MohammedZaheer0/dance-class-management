@@ -6,7 +6,8 @@ import { Inject, ScheduleComponent, Day, Week, WorkWeek, Month, Agenda, Resize, 
 // Importing Registerlicense from Syncfusion
 import { registerLicense } from '@syncfusion/ej2-base';
 // Adding Registerlicense from Syncfusion website
-registerLicense('Ngo9BigBOggjHTQxAR8/V1NCaF5cXmZCeUx3R3xbf1x0ZFZMZFtbRXdPMyBoS35RckVlWH1edHRWQmheUUZy');
+// registerLicense('Ngo9BigBOggjHTQxAR8/V1NCaF5cXmZCeUx3R3xbf1x0ZFZMZFtbRXdPMyBoS35RckVlWH1edHRWQmheUUZy');
+registerLicense('Ngo9BigBOggjHTQxAR8/V1NCaF5cXmZCf1FpRmJGdld5fUVHYVZUTXxaS00DNHVRdkdnWXdednRcRGNYWEVzX0Q=');
 
 
 const Schedule = () => {
